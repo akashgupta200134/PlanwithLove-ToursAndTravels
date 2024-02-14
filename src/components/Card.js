@@ -3,7 +3,7 @@ import { useState } from "react";
 function Card({ id, image, price, info, name, removeTour }) {
   const [readmore, setReadmore] = useState(false);
 
-  const description = readmore ? info : `${info.substring(0, 200)}....`;
+  const description = readmore ? info : `${info.substring(0, 180)}....`;
 
   function readmoreHandler() {
     setReadmore(!readmore);
